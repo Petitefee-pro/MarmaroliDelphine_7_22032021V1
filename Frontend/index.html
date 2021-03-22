@@ -9,19 +9,31 @@
         <title>Groupomania</title>
     </head>
     <body>     
-        <nav>
+        <nav class="nav">
+            <div>
+                <a href="#">S'inscrire</a>
+                <a href="#">Se connecter</a>
+                <a href="#">Forum</a>
+            </div>            
+            <img src="./images/icon-left-font-monochrome-white-redimensionné.png" alt="logo">
         </nav>  
         <main id="app">
-            <h1> {{ message }}</h1>
+            <h1> </h1>
         </main>
         <footer>
+            <div>
+                <a href="#">Politique de confidentialité</a>
+                <a href="#">Réglement du forum</a>
+                <a href="#">Désinscription</a>
+                <a href="#">Contact</a>                
+            </div>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
         <script>
             const reseau = new Vue ({
                 el: "#app",
                 data: {
-                    message: "Bonjour",
+                   
                 },
             });            
         </script>
