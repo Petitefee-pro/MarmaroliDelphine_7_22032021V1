@@ -9,11 +9,21 @@
         <title>Groupomania</title>
     </head>
     <body>     
-        <nav></nav>  
+        <nav>
+        </nav>  
         <main id="app">
+            <h1> {{ message }}</h1>
         </main>
         <footer>
         </footer>
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+        <script>
+            const reseau = new Vue ({
+                el: "#app",
+                data: {
+                    message: "Bonjour",
+                },
+            });            
+        </script>
     </body>
 </html>
